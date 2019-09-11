@@ -1,7 +1,36 @@
+body{
+  color:white;
+  background-color: black;
+}
+
 .square {
-  height: 100px;
-  width: 100px;
-  padding: 1em;
+  height: 200px;
+  width: 200px;
   margin-top: 2.5em;
   border-style: dashed;
+  border-radius: 50%;
+}
+.inline {
+  display: inline-block;
+}
+
+#selector{
+  text-align: center;
+  top: 1em;
+  display: block;
+}
+#wrapper{
+  text-align: center;
+}
+
+#colorPicker{
+  border-style: none;
+  background-color: #00000000;
+
+  cursor: pointer;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }

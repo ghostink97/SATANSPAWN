@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="color.css" />
-  </head>
 
-  <body>
-    <label for="colorLBL">Color UwU:</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="color.css" />
+</head>
+
+<body>
+  <h1>start by selecting a color:</h1>
+
+  <div id="selector">
     <input type="color" id="colorPicker" name="color" value="#B5A1D4" />
-    <div class="square"></div>
-    <p id="hex">Hex:</p>
-    <p id="rgb">RGB:</p>
-    <p id="hsl">HSL:</p>
-    <script src="color.js"></script>
-  </body>
+  </div>
+  <div id="wrapper">
+    <div id="col-1" class="inline">
+      <div class="square" id="squarem1"></div>
+      <p id="hex-1">Hex:</p>
+      <p id="rgb-1">RGB:</p>
+      <p id="hslm1">HSL:</p>
+    </div>
+    <div id="col-2" class="inline">
+      <div class="square" id="squarem2"></div>
+      <p id="hex-2">Hex:</p>
+      <p id="rgb-2">RGB:</p>
+      <p id="hslm2">HSL:</p>
+    </div>
+    <div id="basecolor" class="inline">
+      <div id="squareBase" class="square"></div>
+      <p id="hex">Hex:</p>
+      <p id="rgb">RGB:</p>
+      <p id="hsl">HSL:</p>
+    </div>
+    <div id="col+1" class="inline">
+      <div class="square" id="squarep1"></div>
+      <p id="hex+1">Hex:</p>
+      <p id="rgb+1">RGB:</p>
+      <p id="hslp1">HSL:</p>
+    </div>
+    <div id="col+2" class="inline">
+      <div class="square" id="squarep2"></div>
+      <p id="hex+2">Hex:</p>
+      <p id="rgb+2">RGB:</p>
+      <p id="hslp2">HSL:</p>
+    </div>
+  </div>
+  <script src="js.js"></script>
+</body>
+
 </html>
