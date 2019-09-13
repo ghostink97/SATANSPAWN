@@ -95,7 +95,32 @@ function convertRGBtoHSl(color) {
     hsl.textContent = valueHSL;
   }
 
-  analogousCT();
+  //analogousCT();
+  //monochromaticCT();
+  //shadesCT();
+  //complimentatyCT();
+  //compoundCT();
+  //TriadCT();
+  const harmBtn = document.querySelector("#sortby");
+
+  harmBtn.addEventListener('change', changeCT);
+
+  function changeCT() {
+    if (harmBtn.options[harmBtn.selectedIndex].value == 'Analogous') {
+      analogousCT();
+      console.log("lie lie liar")
+    } else if (harmBtn.options[harmBtn.selectedIndex].value == 'Monochromatic') {
+      monochromaticCT();
+    } else if (harmBtn.options[harmBtn.selectedIndex].value == 'Triad') {
+      TriadCT();
+    } else if (harmBtn.options[harmBtn.selectedIndex].value == 'Complementary') {
+      complimentatyCT();
+    } else if (harmBtn.options[harmBtn.selectedIndex].value == 'Compound') {
+      compoundCT();
+    } else if (harmBtn.options[harmBtn.selectedIndex].value == 'Shades') {
+      shadesCT();
+    }
+  }
 
   function analogousCT() {
     document.querySelector("#basecolor").classList.add("highlight");
@@ -118,10 +143,12 @@ function convertRGBtoHSl(color) {
     let cssHSLp2 = `hsl(${Math.round(h + 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarep2.style.backgroundColor = cssHSLp2;
     document.querySelector("#hslp2").textContent = cssHSLp2;
+    document.querySelector("#col5").classList.remove("highlight");
+    document.querySelector("#col2").classList.remove("highlight");
+    document.querySelector("#col1").classList.remove("highlight");
 
   }
 
-  monochromaticCT();
 
   function monochromaticCT() {
     document.querySelector("#basecolor").classList.add("highlight");
@@ -144,9 +171,11 @@ function convertRGBtoHSl(color) {
     let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 30)}%)`;
     squarep2.style.backgroundColor = cssHSLp2;
     document.querySelector("#hslp2").textContent = cssHSLp2;
+    document.querySelector("#col5").classList.remove("highlight");
+    document.querySelector("#col2").classList.remove("highlight");
+    document.querySelector("#col1").classList.remove("highlight");
   }
 
-  shadesCT();
 
   function shadesCT() {
     document.querySelector("#basecolor").classList.add("highlight");
@@ -169,9 +198,11 @@ function convertRGBtoHSl(color) {
     let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s + 60)}%, ${Math.round(l)}%)`;
     squarep2.style.backgroundColor = cssHSLp2;
     document.querySelector("#hslp2").textContent = cssHSLp2;
+    document.querySelector("#col5").classList.remove("highlight");
+    document.querySelector("#col2").classList.remove("highlight");
+    document.querySelector("#col1").classList.remove("highlight");
   }
 
-  complimentatyCT();
 
   function complimentatyCT() {
     document.querySelector("#basecolor").classList.add("highlight");
@@ -195,12 +226,13 @@ function convertRGBtoHSl(color) {
     let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 30)}%)`;
     squarep2.style.backgroundColor = cssHSLp2;
     document.querySelector("#hslp2").textContent = cssHSLp2;
+    document.querySelector("#col5").classList.remove("highlight");
+    document.querySelector("#col1").classList.remove("highlight");
   }
 
 
 
 
-  compoundCT();
 
   function compoundCT() {
     document.querySelector("#basecolor").classList.add("highlight");
@@ -223,9 +255,11 @@ function convertRGBtoHSl(color) {
     let cssHSLp2 = `hsl(${Math.round(h + 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarep2.style.backgroundColor = cssHSLp2;
     document.querySelector("#hslp2").textContent = cssHSLp2;
+    document.querySelector("#col5").classList.remove("highlight");
+    document.querySelector("#col2").classList.remove("highlight");
+    document.querySelector("#col1").classList.remove("highlight");
   }
 
-  TriadCT();
 
   function TriadCT() {
     document.querySelector("#basecolor").classList.add("highlight");
