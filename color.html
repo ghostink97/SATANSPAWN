@@ -10,10 +10,22 @@
 </head>
 
 <body>
-  <h1>start by selecting a color:</h1>
+  <h1>start by selecting a harmony-mode and then a color:</h1>
 
   <div id="selector">
-    <input type="color" id="colorPicker" name="color" value="#B5A1D4" />
+    <select name="harmony" id="sortby">
+      <option value="empty" selected="selected">Pick one</option>
+      <option value="Analogous">Analogous</option>
+      <option value="Monochromatic">Monochromatic</option>
+      <option value="Triad">Triad</option>
+      <option value="Complementary">Complementary</option>
+      <option value="Compound">Compound</option>
+      <option value="Shades">Shades</option>
+    </select>
+    <button id="analogous">Analogous</button>
+    <div id="btwWrap">
+      <input type="color" id="colorPicker" name="color" value="#B5A1D4" />
+    </div>
   </div>
   <div id="wrapper">
     <div id="col-1" class="inline">

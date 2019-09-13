@@ -26,11 +26,16 @@ body{
 #colorPicker{
   border-style: none;
   background-color: #00000000;
-
+  margin-top: 1em;
   cursor: pointer;
 }
 
 h1{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+
+.highlight{
+  border-bottom-style: double;
+
 }
