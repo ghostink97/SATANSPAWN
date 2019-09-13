@@ -94,84 +94,162 @@ function convertRGBtoHSl(color) {
   function displayHSL() {
     hsl.textContent = valueHSL;
   }
-  /*
-    analogousCT();
-  
-    function analogousCT() {
-      document.querySelector("#basecolor").classList.add("highlight");
-      let squarem1 = document.querySelector("#squarem1");
-      let cssHSLm1 = `hsl(${Math.round(h - 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
-      squarem1.style.backgroundColor = cssHSLm1;
-      document.querySelector("#hslm1").textContent = cssHSLm1;
-      console.log(cssHSLm1);
-      let squarem2 = document.querySelector("#squarem2");
-      let cssHSLm2 = `hsl(${Math.round(h - 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
-      squarem2.style.backgroundColor = cssHSLm2;
-      document.querySelector("#hslm2").textContent = cssHSLm2;
-  
-      let squarep1 = document.querySelector("#squarep1");
-      let cssHSLp1 = `hsl(${Math.round(h + 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
-      squarep1.style.backgroundColor = cssHSLp1;
-      document.querySelector("#hslp1").textContent = cssHSLp1;
-  
-      let squarep2 = document.querySelector("#squarep2");
-      let cssHSLp2 = `hsl(${Math.round(h + 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
-      squarep2.style.backgroundColor = cssHSLp2;
-      document.querySelector("#hslp2").textContent = cssHSLp2;
-  
-    }
-    */
-  /*
- monochromaticCT();
 
- function monochromaticCT() {
-   document.querySelector("#basecolor").classList.add("highlight");
-   let squarem1 = document.querySelector("#squarem1");
-   let cssHSLm1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 30)}%)`;
-   squarem1.style.backgroundColor = cssHSLm1;
-   document.querySelector("#hslm1").textContent = cssHSLm1;
-   console.log(cssHSLm1);
-   let squarem2 = document.querySelector("#squarem2");
-   let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 15)}%)`;
-   squarem2.style.backgroundColor = cssHSLm2;
-   document.querySelector("#hslm2").textContent = cssHSLm2;
+  analogousCT();
 
-   let squarep1 = document.querySelector("#squarep1");
-   let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 15)}%)`;
-   squarep1.style.backgroundColor = cssHSLp1;
-   document.querySelector("#hslp1").textContent = cssHSLp1;
+  function analogousCT() {
+    document.querySelector("#basecolor").classList.add("highlight");
+    let squarem1 = document.querySelector("#squarem1");
+    let cssHSLm1 = `hsl(${Math.round(h - 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarem1.style.backgroundColor = cssHSLm1;
+    document.querySelector("#hslm1").textContent = cssHSLm1;
+    console.log(cssHSLm1);
+    let squarem2 = document.querySelector("#squarem2");
+    let cssHSLm2 = `hsl(${Math.round(h - 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarem2.style.backgroundColor = cssHSLm2;
+    document.querySelector("#hslm2").textContent = cssHSLm2;
 
-   let squarep2 = document.querySelector("#squarep2");
-   let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 30)}%)`;
-   squarep2.style.backgroundColor = cssHSLp2;
-   document.querySelector("#hslp2").textContent = cssHSLp2;
- }
-*/
-  /*
-    shadesCT();
-  
-    function shadesCT() {
-      document.querySelector("#basecolor").classList.add("highlight");
-      let squarem1 = document.querySelector("#squarem1");
-      let cssHSLm1 = `hsl(${Math.round(h)}, ${Math.round(s - 60)}%, ${Math.round(l)}%)`;
-      squarem1.style.backgroundColor = cssHSLm1;
-      document.querySelector("#hslm1").textContent = cssHSLm1;
-      console.log(cssHSLm1);
-      let squarem2 = document.querySelector("#squarem2");
-      let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s - 30)}%, ${Math.round(l)}%)`;
-      squarem2.style.backgroundColor = cssHSLm2;
-      document.querySelector("#hslm2").textContent = cssHSLm2;
-  
-      let squarep1 = document.querySelector("#squarep1");
-      let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s + 30)}%, ${Math.round(l)}%)`;
-      squarep1.style.backgroundColor = cssHSLp1;
-      document.querySelector("#hslp1").textContent = cssHSLp1;
-  
-      let squarep2 = document.querySelector("#squarep2");
-      let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s + 60)}%, ${Math.round(l)}%)`;
-      squarep2.style.backgroundColor = cssHSLp2;
-      document.querySelector("#hslp2").textContent = cssHSLp2;
-    }
-  */
+    let squarep1 = document.querySelector("#squarep1");
+    let cssHSLp1 = `hsl(${Math.round(h + 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarep1.style.backgroundColor = cssHSLp1;
+    document.querySelector("#hslp1").textContent = cssHSLp1;
+
+    let squarep2 = document.querySelector("#squarep2");
+    let cssHSLp2 = `hsl(${Math.round(h + 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarep2.style.backgroundColor = cssHSLp2;
+    document.querySelector("#hslp2").textContent = cssHSLp2;
+
+  }
+
+  monochromaticCT();
+
+  function monochromaticCT() {
+    document.querySelector("#basecolor").classList.add("highlight");
+    let squarem1 = document.querySelector("#squarem1");
+    let cssHSLm1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 30)}%)`;
+    squarem1.style.backgroundColor = cssHSLm1;
+    document.querySelector("#hslm1").textContent = cssHSLm1;
+    console.log(cssHSLm1);
+    let squarem2 = document.querySelector("#squarem2");
+    let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 15)}%)`;
+    squarem2.style.backgroundColor = cssHSLm2;
+    document.querySelector("#hslm2").textContent = cssHSLm2;
+
+    let squarep1 = document.querySelector("#squarep1");
+    let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 15)}%)`;
+    squarep1.style.backgroundColor = cssHSLp1;
+    document.querySelector("#hslp1").textContent = cssHSLp1;
+
+    let squarep2 = document.querySelector("#squarep2");
+    let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 30)}%)`;
+    squarep2.style.backgroundColor = cssHSLp2;
+    document.querySelector("#hslp2").textContent = cssHSLp2;
+  }
+
+  shadesCT();
+
+  function shadesCT() {
+    document.querySelector("#basecolor").classList.add("highlight");
+    let squarem1 = document.querySelector("#squarem1");
+    let cssHSLm1 = `hsl(${Math.round(h)}, ${Math.round(s - 60)}%, ${Math.round(l)}%)`;
+    squarem1.style.backgroundColor = cssHSLm1;
+    document.querySelector("#hslm1").textContent = cssHSLm1;
+    console.log(cssHSLm1);
+    let squarem2 = document.querySelector("#squarem2");
+    let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s - 30)}%, ${Math.round(l)}%)`;
+    squarem2.style.backgroundColor = cssHSLm2;
+    document.querySelector("#hslm2").textContent = cssHSLm2;
+
+    let squarep1 = document.querySelector("#squarep1");
+    let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s + 30)}%, ${Math.round(l)}%)`;
+    squarep1.style.backgroundColor = cssHSLp1;
+    document.querySelector("#hslp1").textContent = cssHSLp1;
+
+    let squarep2 = document.querySelector("#squarep2");
+    let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s + 60)}%, ${Math.round(l)}%)`;
+    squarep2.style.backgroundColor = cssHSLp2;
+    document.querySelector("#hslp2").textContent = cssHSLp2;
+  }
+
+  complimentatyCT();
+
+  function complimentatyCT() {
+    document.querySelector("#basecolor").classList.add("highlight");
+    let squarem1 = document.querySelector("#squarem1");
+    let cssHSLm1 = `hsl(${Math.round(h - 180)}, ${Math.round(s)}%, ${Math.round(l - 15)}%)`;
+    squarem1.style.backgroundColor = cssHSLm1;
+    document.querySelector("#col2").classList.add("highlight");
+    document.querySelector("#hslm1").textContent = cssHSLm1;
+    console.log(cssHSLm1);
+    let squarem2 = document.querySelector("#squarem2");
+    let cssHSLm2 = `hsl(${Math.round(h + 180)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarem2.style.backgroundColor = cssHSLm2;
+    document.querySelector("#hslm2").textContent = cssHSLm2;
+
+    let squarep1 = document.querySelector("#squarep1");
+    let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 15)}%)`;
+    squarep1.style.backgroundColor = cssHSLp1;
+    document.querySelector("#hslp1").textContent = cssHSLp1;
+
+    let squarep2 = document.querySelector("#squarep2");
+    let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 30)}%)`;
+    squarep2.style.backgroundColor = cssHSLp2;
+    document.querySelector("#hslp2").textContent = cssHSLp2;
+  }
+
+
+
+
+  compoundCT();
+
+  function compoundCT() {
+    document.querySelector("#basecolor").classList.add("highlight");
+    let squarem1 = document.querySelector("#squarem1");
+    let cssHSLm1 = `hsl(${Math.round(h - 210)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarem1.style.backgroundColor = cssHSLm1;
+    document.querySelector("#hslm1").textContent = cssHSLm1;
+    console.log(cssHSLm1);
+    let squarem2 = document.querySelector("#squarem2");
+    let cssHSLm2 = `hsl(${Math.round(h - 180)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarem2.style.backgroundColor = cssHSLm2;
+    document.querySelector("#hslm2").textContent = cssHSLm2;
+
+    let squarep1 = document.querySelector("#squarep1");
+    let cssHSLp1 = `hsl(${Math.round(h + 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarep1.style.backgroundColor = cssHSLp1;
+    document.querySelector("#hslp1").textContent = cssHSLp1;
+
+    let squarep2 = document.querySelector("#squarep2");
+    let cssHSLp2 = `hsl(${Math.round(h + 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarep2.style.backgroundColor = cssHSLp2;
+    document.querySelector("#hslp2").textContent = cssHSLp2;
+  }
+
+  TriadCT();
+
+  function TriadCT() {
+    document.querySelector("#basecolor").classList.add("highlight");
+    let squarem1 = document.querySelector("#squarem1");
+    let cssHSLm1 = `hsl(${Math.round(h - 120)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarem1.style.backgroundColor = cssHSLm1;
+    document.querySelector("#hslm1").textContent = cssHSLm1;
+    document.querySelector("#col1").classList.add("highlight");
+    console.log(cssHSLm1);
+    let squarem2 = document.querySelector("#squarem2");
+    let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 15)}%)`;
+    squarem2.style.backgroundColor = cssHSLm2;
+    document.querySelector("#hslm2").textContent = cssHSLm2;
+
+    let squarep1 = document.querySelector("#squarep1");
+    let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 15)}%)`;
+    squarep1.style.backgroundColor = cssHSLp1;
+    document.querySelector("#hslp1").textContent = cssHSLp1;
+
+    let squarep2 = document.querySelector("#squarep2");
+    let cssHSLp2 = `hsl(${Math.round(h + 120)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
+    squarep2.style.backgroundColor = cssHSLp2;
+    document.querySelector("#hslp2").textContent = cssHSLp2;
+    document.querySelector("#col5").classList.add("highlight");
+  }
 
 }
