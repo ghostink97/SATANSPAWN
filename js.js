@@ -24,7 +24,7 @@ function convertHextoRGB(color) {
   let r = parseInt(color.substring(1, 3), 16);
   let g = parseInt(color.substring(3, 5), 16);
   let b = parseInt(color.substring(5, 7), 16);
-  let value = `RGB( ${r}, ${g}, ${b})`;
+  let value = `rgb( ${r}, ${g}, ${b})`;
   let RGB = { r, g, b };
   console.log(value);
   rgb.textContent = value;
@@ -128,16 +128,22 @@ function convertRGBtoHSl(color) {
     let cssHSLm1 = `hsl(${Math.round(h - 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarem1.style.backgroundColor = cssHSLm1;
     document.querySelector("#hslm1").textContent = cssHSLm1;
-    console.log(cssHSLm1);
+    //console.log(cssHSLm1);
     let squarem2 = document.querySelector("#squarem2");
     let cssHSLm2 = `hsl(${Math.round(h - 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarem2.style.backgroundColor = cssHSLm2;
     document.querySelector("#hslm2").textContent = cssHSLm2;
+    const RGBvalue1 = squarem1.style.backgroundColor;
+    document.querySelector("#rgbm1").textContent = RGBvalue1;
+    const RGBvalue2 = squarem2.style.backgroundColor;
+    document.querySelector("#rgbm2").textContent = RGBvalue2;
 
     let squarep1 = document.querySelector("#squarep1");
     let cssHSLp1 = `hsl(${Math.round(h + 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarep1.style.backgroundColor = cssHSLp1;
     document.querySelector("#hslp1").textContent = cssHSLp1;
+    const RGBvalue3 = squarep1.style.backgroundColor;
+    document.querySelector("#rgbp1").textContent = RGBvalue3;
 
     let squarep2 = document.querySelector("#squarep2");
     let cssHSLp2 = `hsl(${Math.round(h + 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
@@ -146,7 +152,8 @@ function convertRGBtoHSl(color) {
     document.querySelector("#col5").classList.remove("highlight");
     document.querySelector("#col2").classList.remove("highlight");
     document.querySelector("#col1").classList.remove("highlight");
-
+    const RGBvalue4 = squarep2.style.backgroundColor;
+    document.querySelector("#rgbp2").textContent = RGBvalue4;
   }
 
 
@@ -156,16 +163,22 @@ function convertRGBtoHSl(color) {
     let cssHSLm1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 30)}%)`;
     squarem1.style.backgroundColor = cssHSLm1;
     document.querySelector("#hslm1").textContent = cssHSLm1;
-    console.log(cssHSLm1);
+    const RGBvalue1 = squarem1.style.backgroundColor;
+    document.querySelector("#rgbm1").textContent = RGBvalue1;
+    //console.log(cssHSLm1);
     let squarem2 = document.querySelector("#squarem2");
     let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 15)}%)`;
     squarem2.style.backgroundColor = cssHSLm2;
     document.querySelector("#hslm2").textContent = cssHSLm2;
+    const RGBvalue2 = squarem2.style.backgroundColor;
+    document.querySelector("#rgbm2").textContent = RGBvalue2;
 
     let squarep1 = document.querySelector("#squarep1");
     let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 15)}%)`;
     squarep1.style.backgroundColor = cssHSLp1;
     document.querySelector("#hslp1").textContent = cssHSLp1;
+    const RGBvalue3 = squarep1.style.backgroundColor;
+    document.querySelector("#rgbp1").textContent = RGBvalue3;
 
     let squarep2 = document.querySelector("#squarep2");
     let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 30)}%)`;
@@ -174,6 +187,8 @@ function convertRGBtoHSl(color) {
     document.querySelector("#col5").classList.remove("highlight");
     document.querySelector("#col2").classList.remove("highlight");
     document.querySelector("#col1").classList.remove("highlight");
+    const RGBvalue4 = squarep2.style.backgroundColor;
+    document.querySelector("#rgbp2").textContent = RGBvalue4;
   }
 
 
@@ -183,16 +198,21 @@ function convertRGBtoHSl(color) {
     let cssHSLm1 = `hsl(${Math.round(h)}, ${Math.round(s - 60)}%, ${Math.round(l)}%)`;
     squarem1.style.backgroundColor = cssHSLm1;
     document.querySelector("#hslm1").textContent = cssHSLm1;
-    console.log(cssHSLm1);
+    const RGBvalue1 = squarem1.style.backgroundColor;
+    document.querySelector("#rgbm1").textContent = RGBvalue1;
+    //console.log(cssHSLm1);
     let squarem2 = document.querySelector("#squarem2");
     let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s - 30)}%, ${Math.round(l)}%)`;
     squarem2.style.backgroundColor = cssHSLm2;
     document.querySelector("#hslm2").textContent = cssHSLm2;
-
+    const RGBvalue2 = squarem2.style.backgroundColor;
+    document.querySelector("#rgbm2").textContent = RGBvalue2;
     let squarep1 = document.querySelector("#squarep1");
     let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s + 30)}%, ${Math.round(l)}%)`;
     squarep1.style.backgroundColor = cssHSLp1;
     document.querySelector("#hslp1").textContent = cssHSLp1;
+    const RGBvalue3 = squarep1.style.backgroundColor;
+    document.querySelector("#rgbp1").textContent = RGBvalue3;
 
     let squarep2 = document.querySelector("#squarep2");
     let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s + 60)}%, ${Math.round(l)}%)`;
@@ -201,6 +221,8 @@ function convertRGBtoHSl(color) {
     document.querySelector("#col5").classList.remove("highlight");
     document.querySelector("#col2").classList.remove("highlight");
     document.querySelector("#col1").classList.remove("highlight");
+    const RGBvalue4 = squarep2.style.backgroundColor;
+    document.querySelector("#rgbp2").textContent = RGBvalue4;
   }
 
 
@@ -211,16 +233,22 @@ function convertRGBtoHSl(color) {
     squarem1.style.backgroundColor = cssHSLm1;
     document.querySelector("#col2").classList.add("highlight");
     document.querySelector("#hslm1").textContent = cssHSLm1;
-    console.log(cssHSLm1);
+    const RGBvalue1 = squarem1.style.backgroundColor;
+    document.querySelector("#rgbm1").textContent = RGBvalue1;
+    //console.log(cssHSLm1);
     let squarem2 = document.querySelector("#squarem2");
     let cssHSLm2 = `hsl(${Math.round(h + 180)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarem2.style.backgroundColor = cssHSLm2;
     document.querySelector("#hslm2").textContent = cssHSLm2;
+    const RGBvalue2 = squarem2.style.backgroundColor;
+    document.querySelector("#rgbm2").textContent = RGBvalue2;
 
     let squarep1 = document.querySelector("#squarep1");
     let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 15)}%)`;
     squarep1.style.backgroundColor = cssHSLp1;
     document.querySelector("#hslp1").textContent = cssHSLp1;
+    const RGBvalue3 = squarep1.style.backgroundColor;
+    document.querySelector("#rgbp1").textContent = RGBvalue3;
 
     let squarep2 = document.querySelector("#squarep2");
     let cssHSLp2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 30)}%)`;
@@ -228,6 +256,8 @@ function convertRGBtoHSl(color) {
     document.querySelector("#hslp2").textContent = cssHSLp2;
     document.querySelector("#col5").classList.remove("highlight");
     document.querySelector("#col1").classList.remove("highlight");
+    const RGBvalue4 = squarep2.style.backgroundColor;
+    document.querySelector("#rgbp2").textContent = RGBvalue4;
   }
 
 
@@ -240,16 +270,22 @@ function convertRGBtoHSl(color) {
     let cssHSLm1 = `hsl(${Math.round(h - 210)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarem1.style.backgroundColor = cssHSLm1;
     document.querySelector("#hslm1").textContent = cssHSLm1;
-    console.log(cssHSLm1);
+    const RGBvalue1 = squarem1.style.backgroundColor;
+    document.querySelector("#rgbm1").textContent = RGBvalue1;
+    //console.log(cssHSLm1);
     let squarem2 = document.querySelector("#squarem2");
     let cssHSLm2 = `hsl(${Math.round(h - 180)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarem2.style.backgroundColor = cssHSLm2;
     document.querySelector("#hslm2").textContent = cssHSLm2;
+    const RGBvalue2 = squarem2.style.backgroundColor;
+    document.querySelector("#rgbm2").textContent = RGBvalue2;
 
     let squarep1 = document.querySelector("#squarep1");
     let cssHSLp1 = `hsl(${Math.round(h + 30)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarep1.style.backgroundColor = cssHSLp1;
     document.querySelector("#hslp1").textContent = cssHSLp1;
+    const RGBvalue3 = squarep1.style.backgroundColor;
+    document.querySelector("#rgbp1").textContent = RGBvalue3;
 
     let squarep2 = document.querySelector("#squarep2");
     let cssHSLp2 = `hsl(${Math.round(h + 60)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
@@ -258,6 +294,8 @@ function convertRGBtoHSl(color) {
     document.querySelector("#col5").classList.remove("highlight");
     document.querySelector("#col2").classList.remove("highlight");
     document.querySelector("#col1").classList.remove("highlight");
+    const RGBvalue4 = squarep2.style.backgroundColor;
+    document.querySelector("#rgbp2").textContent = RGBvalue4;
   }
 
 
@@ -268,22 +306,33 @@ function convertRGBtoHSl(color) {
     squarem1.style.backgroundColor = cssHSLm1;
     document.querySelector("#hslm1").textContent = cssHSLm1;
     document.querySelector("#col1").classList.add("highlight");
-    console.log(cssHSLm1);
+    const RGBvalue1 = squarem1.style.backgroundColor;
+    document.querySelector("#rgbm1").textContent = RGBvalue1;
+    //console.log(cssHSLm1);
     let squarem2 = document.querySelector("#squarem2");
     let cssHSLm2 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l - 15)}%)`;
     squarem2.style.backgroundColor = cssHSLm2;
     document.querySelector("#hslm2").textContent = cssHSLm2;
+    const RGBvalue2 = squarem2.style.backgroundColor;
+    document.querySelector("#rgbm2").textContent = RGBvalue2;
 
     let squarep1 = document.querySelector("#squarep1");
     let cssHSLp1 = `hsl(${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l + 15)}%)`;
     squarep1.style.backgroundColor = cssHSLp1;
     document.querySelector("#hslp1").textContent = cssHSLp1;
+    const RGBvalue3 = squarep1.style.backgroundColor;
+    document.querySelector("#rgbp1").textContent = RGBvalue3;
 
     let squarep2 = document.querySelector("#squarep2");
     let cssHSLp2 = `hsl(${Math.round(h + 120)}, ${Math.round(s)}%, ${Math.round(l)}%)`;
     squarep2.style.backgroundColor = cssHSLp2;
     document.querySelector("#hslp2").textContent = cssHSLp2;
     document.querySelector("#col5").classList.add("highlight");
+    const RGBvalue4 = squarep2.style.backgroundColor;
+    document.querySelector("#rgbp2").textContent = RGBvalue4;
+    document.querySelector("#col2").classList.remove("highlight");
   }
+
+
 
 }

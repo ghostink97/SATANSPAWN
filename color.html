@@ -10,8 +10,11 @@
 </head>
 
 <body>
-  <h1>start by selecting a harmony, then select a color:</h1>
+  <h1>start by selecting a color, then select a harmony:</h1>
 
+  <div id="btnWrap">
+    <input type="color" id="colorPicker" name="color" value="#B5A1D4" />
+  </div>
   <div id="selector">
     <select name="harmony" id="sortby" class="bitchboy">
       <option value="empty">Pick one</option>
@@ -22,22 +25,18 @@
       <option value="Compound">Compound</option>
       <option value="Shades">Shades</option>
     </select>
-    <button id="analogous">Analogous</button>
-    <div id="btwWrap">
-      <input type="color" id="colorPicker" name="color" value="#B5A1D4" />
-    </div>
   </div>
   <div id="wrapper">
     <div id="col1" class="inline">
       <div class="square" id="squarem1"></div>
-      <p id="hex-1">Hex:</p>
-      <p id="rgb-1">RGB:</p>
+      <p id="hexm1">Hex:</p>
+      <p id="rgbm1">RGB:</p>
       <p id="hslm1">HSL:</p>
     </div>
     <div id="col2" class="inline">
       <div class="square" id="squarem2"></div>
-      <p id="hex-2">Hex:</p>
-      <p id="rgb-2">RGB:</p>
+      <p id="hexm2">Hex:</p>
+      <p id="rgbm2">RGB:</p>
       <p id="hslm2">HSL:</p>
     </div>
     <div id="basecolor" class="inline">
@@ -48,14 +47,14 @@
     </div>
     <div id="col+1" class="inline">
       <div class="square" id="squarep1"></div>
-      <p id="hex+1">Hex:</p>
-      <p id="rgb+1">RGB:</p>
+      <p id="hexp1">Hex:</p>
+      <p id="rgbp1">RGB:</p>
       <p id="hslp1">HSL:</p>
     </div>
     <div id="col5" class="inline">
       <div class="square" id="squarep2"></div>
-      <p id="hex+2">Hex:</p>
-      <p id="rgb+2">RGB:</p>
+      <p id="hexp2">Hex:</p>
+      <p id="rgbp2">RGB:</p>
       <p id="hslp2">HSL:</p>
     </div>
   </div>
